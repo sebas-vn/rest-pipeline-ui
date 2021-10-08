@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h2 class="card-header text-center"> {{ title }} </h2>
+    </div>
+
+    <div class="card-body">
+
+        <h5 class="card-title"> Enter the Id of the User to Find:</h5>
+        <div class="input-group input-group-lg">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+            </div>
+            <input type="text" [(ngModel)]="username" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button type="submit" (click)="findUserByUsername()" class="btn btn-primary">Find</button>
+    </div>
+</div>
